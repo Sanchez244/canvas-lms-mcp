@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "ask": [
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(gh pr create *)",
+      "Bash(vercel --prod*)",
+      "Bash(supabase db push*)",
+      "PowerShell(git commit *)",
+      "PowerShell(git push *)",
+      "PowerShell(gh pr create *)",
+      "PowerShell(vercel --prod*)",
+      "PowerShell(supabase db push*)"
+    ],
+    "deny": [
+      "Bash(git push --force*)",
+      "Bash(git push -f *)",
+      "PowerShell(git push --force*)",
+      "PowerShell(git push -f *)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npm run -s check:fast --if-present",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "canvas-mcp",
+  "version": "0.1.0",
+  "description": "MCP server exposing Canvas LMS (courses, assignments, modules, files, submissions) to Claude Code",
+  "scripts": {
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint . --quiet",
+    "check:fast": "npm run -s typecheck && npm run -s lint",
+    "check": "npm run -s check:fast && vitest run",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js"
+  },
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "canvas-mcp": "dist/index.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "dotenv": "^17.4.2",
+    "html-to-text": "^10.0.1",
+    "mammoth": "^1.12.2",
+    "unpdf": "^1.8.1",
+    "zod": "^4.6.2"
+  },
+  "devDependencies": {
+    "@types/html-to-text": "^9.0.4",
+    "@types/node": "^22.20.2",
+    "eslint": "^9.39.5",
+    "tsx": "^4.23.13",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.70.0",
+    "vitest": "^4.1.11"
+  }
+}

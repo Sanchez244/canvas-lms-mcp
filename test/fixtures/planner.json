@@ -1,0 +1,46 @@
+[
+  {
+    "context_type": "Course",
+    "course_id": 101,
+    "context_name": "15.401 Finance Theory I",
+    "plannable_type": "assignment",
+    "plannable_id": 5001,
+    "plannable": { "id": 5001, "title": "Problem Set 2", "due_at": "2026-09-16T03:59:00Z", "points_possible": 100 },
+    "plannable_date": "2026-09-16T03:59:00Z",
+    "html_url": "/courses/101/assignments/5001",
+    "submissions": { "submitted": false, "excused": false, "graded": false, "late": false, "missing": false }
+  },
+  {
+    "context_type": "Course",
+    "course_id": 102,
+    "context_name": "15.810 Marketing Management",
+    "plannable_type": "announcement",
+    "plannable_id": 7001,
+    "plannable": { "id": 7001, "title": "Guest speaker Thursday" },
+    "plannable_date": "2026-09-12T14:00:00Z",
+    "html_url": "/courses/102/discussion_topics/7001",
+    "submissions": false
+  },
+  {
+    "context_type": "Course",
+    "course_id": 102,
+    "context_name": "15.810 Marketing Management",
+    "plannable_type": "quiz",
+    "plannable_id": 6001,
+    "plannable": { "id": 6001, "title": "Case quiz 1", "due_at": "2026-09-14T13:00:00Z", "points_possible": 10 },
+    "plannable_date": "2026-09-14T13:00:00Z",
+    "html_url": "/courses/102/quizzes/6001",
+    "submissions": { "submitted": true, "excused": false, "graded": true, "late": false, "missing": false }
+  },
+  {
+    "context_type": "Course",
+    "course_id": 101,
+    "context_name": "15.401 Finance Theory I",
+    "plannable_type": "assignment",
+    "plannable_id": 5000,
+    "plannable": { "id": 5000, "title": "Problem Set 1", "due_at": "2026-09-09T03:59:00Z", "points_possible": 100 },
+    "plannable_date": "2026-09-09T03:59:00Z",
+    "html_url": "/courses/101/assignments/5000",
+    "submissions": { "submitted": false, "excused": false, "graded": false, "late": false, "missing": true }
+  }
+]
